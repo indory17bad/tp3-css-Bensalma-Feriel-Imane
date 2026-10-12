@@ -1,0 +1,66 @@
+/* ===== Etape 13 : Responsive ===== */
+@media (max-width: 700px) {
+    .main-nav {
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+    }
+
+    .main-nav .main-menu {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .home-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .showcase {
+        background-size: 60%;
+    }
+
+    #bigData-intro {
+        background-size: cover;
+        background-position: left center;
+    }
+
+    #bigData-intro p {
+        display: none;
+    }
+
+    #bigData-intro h2 {
+        margin-bottom: 20px;
+    }
+
+    .ruban .content {
+        width: 85%;
+    }
+
+    .ruban {
+        height: 500px;
+        background-position: 70% bottom;
+    }
+
+    .links-inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .home-cards,
+    .links-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .links ul,
+    .sub-footer ul {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .footer-inner,
+    .footer-inner ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
